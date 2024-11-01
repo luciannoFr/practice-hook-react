@@ -1,0 +1,30 @@
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top-color: #3b82f6; /* Blue-500 */
+    animation: spin 1s linear infinite;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa, #3b82f6, #60a5fa);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .loader-message {
+    margin-top: 1rem;
+    color: #3b82f6; /* Color azul */
+    font-weight: bold;
+    font-size: 1.25rem; /* Tamaño de fuente para el mensaje */
+  }
+  
